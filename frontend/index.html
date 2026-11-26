@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Understand scholarships and government schemes in simple language." />
+  <title>YojanaSaathi — Scholarship & Scheme Explainer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src\styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="YojanaSaathi home">
+      <span class="brand-mark">य</span>
+      <span>yojana<span class="brand-accent">saathi</span><small>SCHEMES MADE SIMPLE</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#how-it-works">How it works</a>
+      <a href="#features">Features</a>
+      <a href="#faq">FAQs</a>
+      <button class="login-btn" id="loginOpen">Log in <span>↗</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> YOUR GUIDE TO GOVERNMENT SCHEMES</div>
+        <h1>Benefits should be<br><em>easy to understand.</em></h1>
+        <p class="hero-text">Find out which scholarships and government schemes you may qualify for — explained in simple Hindi or English, with answers you can verify.</p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#explainer">Check my eligibility <span>→</span></a>
+          <a class="text-btn" href="#how-it-works">See how it works <span>↓</span></a>
+        </div>
+        <div class="trust-row"><span class="trust-icon">✓</span> Clear answers <i></i> Official document references <i></i> Hindi & English</div>
+      </div>
+      <div class="hero-art">
+        <div class="sun-shape"></div>
+        <div class="paper paper-back"></div>
+        <div class="paper paper-front">
+          <div class="paper-top"><span>GOVERNMENT OF INDIA</span><span class="mini-seal">✳</span></div>
+          <div class="paper-line wide"></div><div class="paper-line"></div>
+          <div class="paper-highlight">SCHOLARSHIP<br>APPLICATION</div>
+          <div class="paper-line wide"></div><div class="paper-line short"></div>
+          <div class="paper-check">✓ &nbsp; Eligibility details found</div>
+        </div>
+        <div class="floating-card"><span class="float-check">✓</span><div><b>Simple answers</b><small>With page references</small></div></div>
+        <div class="hero-stamp">सही जानकारी<br><b>सबके लिए</b></div>
+      </div>
+    </section>
+
+    <section class="explainer-section" id="explainer">
+      <div class="section-heading">
+        <div class="eyebrow">START HERE</div>
+        <h2>What would you like to know?</h2>
+        <p>Ask a question or explore a scheme document to get started.</p>
+      </div>
+      <div class="ask-card">
+        <div class="ask-top"><div class="assistant-avatar">य</div><div><b>Your scheme assistant</b><small>Ask in English or Hindi</small></div><span class="online-dot"></span></div>
+        <label for="question">Your question</label>
+        <div class="question-box">
+          <input id="question" type="text" placeholder="e.g. Am I eligible for a post-matric scholarship?" />
+          <button id="askButton" aria-label="Submit question">→</button>
+        </div>
+        <div class="suggestions"><span>Try asking:</span><button class="suggestion">Am I eligible?</button><button class="suggestion">What documents do I need?</button><button class="suggestion">आय सीमा क्या है?</button></div>
+        <div class="demo-answer" id="demoAnswer" role="status" aria-live="polite"></div>
+        <div class="upload-divider"><span>OR</span></div>
+        <label class="upload-area" for="documentUpload">
+          <span class="upload-icon">↑</span>
+          <span><b>Upload an official scheme document</b><small>PDF format · Your document is used to answer your questions</small></span>
+          <span class="browse-link">Browse files</span>
+        </label>
+        <input id="documentUpload" type="file" accept="application/pdf" hidden />
+        <p class="file-status" id="fileStatus">No document selected</p>
+      </div>
+      <p class="disclaimer">This demo interface does not determine real eligibility. Always verify details on the official scheme portal.</p>
+    </section>
+
+    <section class="how-section" id="how-it-works">
+      <div class="section-heading">
+        <div class="eyebrow">A CLEARER WAY FORWARD</div>
+        <h2>From confusing PDFs to clear next steps.</h2>
+      </div>
+      <div class="steps-grid">
+        <article class="step"><div class="step-number">01</div><div class="step-icon">▤</div><h3>Share the document</h3><p>Upload the official scholarship or scheme guidelines you want to understand.</p></article>
+        <article class="step"><div class="step-number">02</div><div class="step-icon">⌕</div><h3>Ask in your language</h3><p>Ask about income limits, class, age, documents or any eligibility condition.</p></article>
+        <article class="step"><div class="step-number">03</div><div class="step-icon">✓</div><h3>Get a cited answer</h3><p>Understand the answer in simple words, with the relevant page reference to check.</p></article>
+      </div>
+    </section>
+
+    <section class="features-section" id="features">
+      <div class="feature-copy"><div class="eyebrow">BUILT FOR EVERYDAY INDIA</div><h2>Information you can<br><em>understand and trust.</em></h2><p>Official rules can be complicated. YojanaSaathi helps make them easier to navigate without replacing the official source.</p></div>
+      <div class="feature-list">
+        <div><span>01</span><p><b>Simple language</b><small>Understand scheme rules in Hindi or English.</small></p></div>
+        <div><span>02</span><p><b>Page-level references</b><small>See where the answer comes from in the PDF.</small></p></div>
+        <div><span>03</span><p><b>Missing details surfaced</b><small>Know when income, class or other details are needed.</small></p></div>
+        <div><span>04</span><p><b>Official confirmation</b><small>Get a reminder to verify and apply on the official portal.</small></p></div>
+      </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+      <div class="section-heading"><div class="eyebrow">GOOD TO KNOW</div><h2>Frequently asked questions</h2></div>
+      <details><summary>Does YojanaSaathi guarantee that I will receive a scholarship?</summary><p>No. It explains eligibility rules from the documents you provide. The relevant government department makes the final decision.</p></details>
+      <details><summary>Can I ask questions in Hindi?</summary><p>Yes. The experience is designed for simple Hindi and English questions.</p></details>
+      <details><summary>Why are page references important?</summary><p>They help you verify the explanation against the original official document.</p></details>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#"><span class="brand-mark">य</span><span>yojana<span class="brand-accent">saathi</span><small>SCHEMES MADE SIMPLE</small></span></a><p>Making public information easier to understand.</p><span class="footer-note">Always verify eligibility on the official scheme website.</span></footer>
+
+  <div class="modal-backdrop" id="loginModal" aria-hidden="true">
+    <section class="login-modal" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+      <button class="modal-close" id="loginClose" aria-label="Close">×</button>
+      <div class="modal-logo">य</div><div class="eyebrow">WELCOME BACK</div><h2 id="loginTitle">Log in to YojanaSaathi</h2>
+      <p>Save your questions and continue where you left off.</p>
+      <form id="loginForm">
+        <label for="email">Email address</label><input id="email" type="email" placeholder="you@example.com" required />
+        <label for="password">Password</label><input id="password" type="password" placeholder="Enter your password" required minlength="6" />
+        <button class="primary-btn full-btn" type="submit">Log in <span>→</span></button>
+      </form>
+      <div class="login-message" id="loginMessage" role="status"></div>
+      <small class="modal-foot">New here? <a href="#" id="signupLink">Create an account</a></small>
+    </section>
+  </div>
+  <script src="src\app.js"></script>
+</body>
+</html>
